@@ -658,6 +658,13 @@
         margin-right: 24px;
     }
 }
+@media screen and (min-width: 1158px) {
+    .footer-info {
+        margin-right: 120px;
+        /* Встановлюємо чіткі 120px за макетом */
+        margin-bottom: 0;
+    }
+}
 
 .footer-logo {
     display: inline-block;
@@ -679,7 +686,9 @@
     max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: left;}
+    text-align: left;
+    /* Текст всередині абзацу завжди зліва */
+}
 
 .footer-container {
   display: flex;
@@ -703,11 +712,14 @@
 @media screen and (min-width: 1158px) {
     .footer-container {
         padding-left: 15px;
-        column-gap: 0;
-        row-gap: 0;
+        padding-right: 15px;
+        display: flex;
+        align-items: baseline;
         flex-wrap: nowrap;
-        gap: unset;
-        }
+        gap: 0;
+        justify-content: flex-start;
+        /* Додайте цей рядок */
+    }
 }
 .footer-social-box {
   text-align: center;
@@ -772,9 +784,10 @@
 }
 
 @media screen and (min-width: 1158px) {
-  .footer-subscribe-container {
-    margin-left: auto;
-  }
+    .footer-subscribe-container {
+        margin-left: auto;
+        /* Обов'язково для десктопа */
+    }
 }
 
 .footer-subscribe-form {
