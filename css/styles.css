@@ -648,22 +648,16 @@
 
 .footer-info {
     text-align: center;
-    /* Центруємо лого та текст на мобайлі */
     margin-bottom: 72px;
+    /* Повертаємо для мобайла */
 }
 
 @media screen and (min-width: 768px) {
     .footer-info {
         text-align: left;
-        /* Повертаємо вирівнювання зліва від планшета */
         margin-bottom: 0;
+        /* Обнуляємо для планшета, бо там працює row-gap: 72px */
         margin-right: 24px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .footer-info {
-        margin-right: 120px;
     }
 }
 
@@ -1096,7 +1090,7 @@
     transition: transform var(--transition-dur-and-func);
     display: flex;
     flex-direction: column;
-    padding: 72px 16px 40px 16px;
+    padding: 72px 0 40px 0;
 }
 
 @media screen and (min-width: 768px) {
