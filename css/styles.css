@@ -648,8 +648,6 @@
 
 .footer-info {
     text-align: center;
-    margin-bottom: 72px;
-    /* Повертаємо для мобайла */
 }
 
 @media screen and (min-width: 768px) {
@@ -680,7 +678,8 @@
     color: var(--cloud);
     max-width: 264px;
     line-height: 1.5;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    text-align: left;}
 
 .footer-container {
   display: flex;
@@ -697,6 +696,7 @@
         column-gap: 24px;
         row-gap: 72px;
         padding-left: 108px;
+        padding-right: 108px;
         }
 }
 
